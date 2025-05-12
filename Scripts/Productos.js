@@ -1,20 +1,20 @@
 // Array con todos los Cursos de Salud
 const cursos = [
-  { id: 1, nombre: "Salud - Agentes Quimicos #1", imagen: "../Imagenes/Cursos/curso1.jpg", descripcion: "Hecho de caña flecha, tejido a mano.", Valor: "Valor: $270000", Precio: 270000 },
-  { id: 2, nombre: "Salud - Aiepi #2", imagen: "../Imagenes/Cursos/curso2.jpg", descripcion: "Diseño tradicional, tejido artesanalmente.", Valor: "Valor: $270000", Precio: 270000 },
-  { id: 3, nombre: "Salud - RCP #3", imagen: "../Imagenes/Cursos/curso3.jpg", descripcion: "Alta calidad y elegancia.", Valor: "Valor: $240000", Precio: 240000 },
-  { id: 4, nombre: "Salud - Soporte Vital Básico #4", imagen: "../Imagenes/Cursos/curso4.jpg", descripcion: "Alta calidad y elegancia.", Valor: "Valor: $300000", Precio: 300000 },
-  { id: 5, nombre: "Salud - Soporte Vital Avanzado #5", imagen: "../Imagenes/Cursos/curso5.jpg", descripcion: "Alta calidad y elegancia.", Valor: "Valor: $250000", Precio: 250000 },
-  { id: 6, nombre: "Salud - Victimas de Violencia #6", imagen: "../Imagenes/Cursos/curso6.jpg", descripcion: "Alta calidad y elegancia.", Valor: "Valor: $200000", Precio: 200000 },
-  { id: 7, nombre: "Sistemas - Windows Básico #7", imagen: "../Imagenes/Cursos/curso7.jpg", descripcion: "Alta calidad y elegancia.", Valor: "Valor: $150000", Precio: 150000 },
-  { id: 8, nombre: "Sistemas - Word #8", imagen: "../Imagenes/Cursos/curso8.jpg", descripcion: "Alta calidad y elegancia.", Valor: "Valor: $100000", Precio: 100000 },
-  { id: 9, nombre: "Sistemas - Excel #9", imagen: "../Imagenes/Cursos/curso9.jpg", descripcion: "Alta calidad y elegancia.", Valor: "Valor: $100000", Precio: 100000 },
-  { id: 10, nombre: "Sistemas - Power BI #10", imagen: "../Imagenes/Cursos/curso10.jpg", descripcion: "Alta calidad y elegancia.", Valor: "Valor: $200000", Precio: 200000 },
-  { id: 11, nombre: "Sistemas - Sql Server #11", imagen: "../Imagenes/Cursos/curso11.jpg", descripcion: "Alta calidad y elegancia.", Valor: "Valor: $250000", Precio: 250000 },
-  { id: 12, nombre: "Sistemas - Access #12", imagen: "../Imagenes/Cursos/curso12.jpg", descripcion: "Alta calidad y elegancia.", Valor: "Valor: $150000", Precio: 150000 },
+  { id: 1, nombre: "Salud - Agentes Quimicos #1", imagen: "../Imagenes/Cursos/curso1.jpg", descripcion: "Curso Online Sincronico y Asincronico 60 horas Certificadas.", Valor: "Valor: $270.000", Precio: 270000 },
+  { id: 2, nombre: "Salud - Aiepi #2", imagen: "../Imagenes/Cursos/curso2.jpg", descripcion: "Curso Online Sincronico y Asincronico 60 horas Certificadas", Valor: "Valor: $270.000", Precio: 270000 },
+  { id: 3, nombre: "Salud - RCP #3", imagen: "../Imagenes/Cursos/curso3.jpg", descripcion: "Curso Online Sincronico y Asincronico 60 horas Certificadas.", Valor: "Valor: $240.000", Precio: 240000 },
+  { id: 4, nombre: "Salud - Soporte Vital Básico #4", imagen: "../Imagenes/Cursos/curso4.jpg", descripcion: "Curso Online Sincronico y Asincronico 60 horas Certificadas.", Valor: "Valor: $300.000", Precio: 300000 },
+  { id: 5, nombre: "Salud - Soporte Vital Avanzado #5", imagen: "../Imagenes/Cursos/curso5.jpg", descripcion: "Curso Online Sincronico y Asincronico 60 horas Certificadas.", Valor: "Valor: $250.000", Precio: 250000 },
+  { id: 6, nombre: "Salud - Victimas de Violencia #6", imagen: "../Imagenes/Cursos/curso6.jpg", descripcion: "Curso Online Sincronico y Asincronico 60 horas Certificadas.", Valor: "Valor: $200.000", Precio: 200000 },
+  { id: 7, nombre: "Sistemas - Windows Básico #7", imagen: "../Imagenes/Cursos/curso7.jpg", descripcion: "Curso Online Sincronico y Asincronico 120 horas Certificadas.", Valor: "Valor: $350.000", Precio: 350000 },
+  { id: 8, nombre: "Sistemas - Word #8", imagen: "../Imagenes/Cursos/curso8.jpg", descripcion: "Curso Online Sincronico y Asincronico 40 horas Certificadas.", Valor: "Valor: $150.000", Precio: 150000 },
+  { id: 9, nombre: "Sistemas - Excel #9", imagen: "../Imagenes/Cursos/curso9.jpg", descripcion: "Curso Online Sincronico y Asincronico 40 horas Certificadas.", Valor: "Valor: $150.000", Precio: 150000 },
+  { id: 10, nombre: "Sistemas - Power BI #10", imagen: "../Imagenes/Cursos/curso10.jpg", descripcion: "Curso Online Sincronico y Asincronico 40 horas Certificadas.", Valor: "Valor: $200.000", Precio: 200000 },
+  { id: 11, nombre: "Sistemas - Sql Server #11", imagen: "../Imagenes/Cursos/curso11.jpg", descripcion: "Curso Online Sincronico y Asincronico 40 horas Certificadas.", Valor: "Valor: $200.000", Precio: 200000 },
+  { id: 12, nombre: "Sistemas - Access #12", imagen: "../Imagenes/Cursos/curso12.jpg", descripcion: "Curso Online Sincronico y Asincronico 40 horas Certificadas.", Valor: "Valor: $200.000", Precio: 200000 },
 ];
 
-// Array con todos los Cursos de Salud
+// Array con todos las consultorias
 const consultorias = [
   { id: 1, nombre: "Facturación en Salud #1", imagen: "../Imagenes/Consultorias/consultoria1.jpg", descripcion: "Contamos con un amplio equipo de colaboradores expertos en este tema.", Valor: "Valor: Por convenir", Precio: 0 },
   { id: 2, nombre: "Facturación de Servicios Públicos #2", imagen: "../Imagenes/Consultorias/consultoria2.jpg", descripcion: "Contamos con un amplio equipo de colaboradores expertos en este tema.", Valor: "Valor: Por convenir", Precio: 0 },
@@ -23,16 +23,15 @@ const consultorias = [
 
 // Array con todos los Equipos de Computo
 const equipos =[
-  { id: 1, nombre: "equipo #1", imagen: "../Imagenes/Equipos/equipo1.jpg", descripcion: "Equipos de la Mejor Calidad.", Valor: "Valor: $165000", Precio: 165000 },
-  { id: 2, nombre: "equipo #2", imagen: "../Imagenes/Equipos/equipo2.jpg", descripcion: "Equipos de la Mejor Calidad.", Valor: "Valor: $150000", Precio: 150000 },
-  { id: 3, nombre: "equipo #3", imagen: "../Imagenes/Equipos/equipo3.jpg", descripcion: "Equipos de la Mejor Calidad.", Valor: "Valor: $180000", Precio: 180000 },
-  { id: 4, nombre: "equipo #4", imagen: "../Imagenes/Equipos/equipo4.jpg", descripcion: "Equipos de la Mejor Calidad.", Valor: "Valor: $170000", Precio: 170000 },
-  { id: 5, nombre: "equipo #5", imagen: "../Imagenes/Equipos/equipo5.jpg", descripcion: "Equipos de la Mejor Calidad.", Valor: "Valor: $175000", Precio: 175000 },
-  { id: 6, nombre: "equipo #6", imagen: "../Imagenes/Equipos/equipo6.jpg", descripcion: "Equipos de la Mejor Calidad.", Valor: "Valor: $173000", Precio: 173000 },
-  { id: 7, nombre: "equipo #7", imagen: "../Imagenes/Equipos/equipo7.jpg", descripcion: "Equipos de la Mejor Calidad.", Valor: "Valor: $185000", Precio: 185000 },
-  { id: 8, nombre: "equipo #8", imagen: "../Imagenes/Equipos/equipo8.jpg", descripcion: "Equipos de la Mejor Calidad.", Valor: "Valor: $140000", Precio: 140000 },
-  { id: 9, nombre: "equipo #9", imagen: "../Imagenes/Equipos/equipo9.jpg", descripcion: "Equipos de la Mejor Calidad.", Valor: "Valor: $150000", Precio: 150000 },
-  { id: 10, nombre: "equipo #10", imagen: "../Imagenes/Equipos/equipo10.jpg", descripcion: "Equipos de la Mejor Calidad.", Valor: "Valor: $175000", Precio: 175000 },
+  { id: 1, nombre: "equipo #1", imagen: "../Imagenes/Equipos/equipo1.jpg", descripcion: "Lenovo Thinksystem ST250 V3 Intel Xeon E-2468 32GB 4 TB.", Valor: "Valor: $4.799.000", Precio: 4799000 },
+  { id: 2, nombre: "equipo #2", imagen: "../Imagenes/Equipos/equipo2.jpg", descripcion: "Servidor Lenovo St50 V2 Xeon E2324g 16gb 2tb.", Valor: "Valor: $5.999.999", Precio: 5999999 },
+  { id: 3, nombre: "equipo #3", imagen: "../Imagenes/Equipos/equipo3.jpg", descripcion: "Servidor Lenovo Ts440 Intel Xeon E3 1226 V3 Ram 32gb 1tb Ssd (Usado).", Valor: "Valor: $1.300.000", Precio: 1300000 },
+  { id: 4, nombre: "equipo #4", imagen: "../Imagenes/Equipos/equipo4.jpg", descripcion: "Servidor Lenovo Thinkserver Ts150 Xeon / Ram 32gb /disco 2tb (Usado).", Valor: "Valor: $2.100.000", Precio: 2100000 },
+  { id: 5, nombre: "equipo #5", imagen: "../Imagenes/Equipos/equipo5.jpg", descripcion: "Servidor Lenovo Xeon 657 Ram 32 Gb DD 1 TB SD", Valor: "Valor: $2.874.000", Precio: 2874000 },
+  { id: 6, nombre: "equipo #6", imagen: "../Imagenes/Equipos/equipo6.jpg", descripcion: "Portatil Dell Latitude 14 pulgadas Procesador Intel Core I5, DD 512 Gb, 8 Gb RAM.", Valor: "Valor: $874.900", Precio: 874000},
+  { id: 7, nombre: "equipo #7", imagen: "../Imagenes/Equipos/equipo7.jpg", descripcion: "Portatil Lenovo 14 pulgadas procesador Core I5, 8 Gb Ram, DD 256 SD.", Valor: "Valor: $1.499.900", Precio: 1499900 },
+  { id: 8, nombre: "equipo #8", imagen: "../Imagenes/Equipos/equipo8.jpg", descripcion: "Portatil Laptop Lenovo Thinkpad Twist .", Valor: "Valor: $849.000", Precio: 849000 },
+  { id: 9, nombre: "equipo #9", imagen: "../Imagenes/Equipos/equipo9.jpg", descripcion: "Portatil Lenovo Thinkpad T440P USADO.", Valor: "Valor: $1.049.000", Precio: 1049000 },
 ];
 
 // Array con todos los accesorios
@@ -186,7 +185,7 @@ function mostrarAccesorios() {
 // Llamar la función al cargar el DOM
 document.addEventListener('DOMContentLoaded', 
   mostrarcursos(), 
-  mostrarBolsos(), 
-  mostrarAccesorios(),
-  mostrarHamacas()
+  mostrarConsultorias(), 
+  mostrarEquipos(),
+  mostrarAccesorios()
 );
