@@ -34,19 +34,17 @@ const equipos =[
   { id: 9, nombre: "equipo #9", imagen: "../Imagenes/Equipos/equipo9.jpg", descripcion: "Portatil Lenovo Thinkpad T440P USADO.", Valor: "Valor: $1.049.000", Precio: 1049000 },
 ];
 
-// Array con todos los accesorios
-const accesorios =[
-  { id: 1, nombre: "Accesorio #1", imagen: "../Imagenes/Accesorios/accesorio1.jpg", descripcion: "Accesorios de Calidad.", Valor: "Valor: $15000", Precio: 15000 },
-  { id: 2, nombre: "Accesorio #2", imagen: "../Imagenes/Accesorios/accesorio2.jpg", descripcion: "Accesorios de Calidad.", Valor: "Valor: $20000", Precio: 20000 },
-  { id: 3, nombre: "Accesorio #3", imagen: "../Imagenes/Accesorios/accesorio2.jpg", descripcion: "Accesorios de Calidad.", Valor: "Valor: $30000", Precio: 30000 },
-  { id: 4, nombre: "Accesorio #4", imagen: "../Imagenes/Accesorios/accesorio3.jpg", descripcion: "Accesorios de Calidad.", Valor: "Valor: $25000", Precio: 25000 },
-  { id: 5, nombre: "Accesorio #5", imagen: "../Imagenes/Accesorios/accesorio4.jpg", descripcion: "Accesorios de Calidad.", Valor: "Valor: $18000", Precio: 18000 },
-  { id: 6, nombre: "Accesorio #6", imagen: "../Imagenes/Accesorios/accesorio5.jpg", descripcion: "Accesorios de Calidad.", Valor: "Valor: $25000", Precio: 25000 },
-  { id: 7, nombre: "Accesorio #7", imagen: "../Imagenes/Accesorios/accesorio6.jpg", descripcion: "Accesorios de Calidad.", Valor: "Valor: $23000", Precio: 23000 },
-  { id: 8, nombre: "Accesorio #8", imagen: "../Imagenes/Accesorios/accesorio7.jpg", descripcion: "Accesorios de Calidad.", Valor: "Valor: $27000", Precio: 27000 },
-  { id: 9, nombre: "Accesorio #9", imagen: "../Imagenes/Accesorios/accesorio8.jpg", descripcion: "Accesorios de Calidad.", Valor: "Valor: $18000", Precio: 18000 },
-  { id: 10, nombre: "Accesorio #10", imagen: "../Imagenes/Accesorios/accesorio9.jpg", descripcion: "Accesorios de Calidad.", Valor: "Valor: $20000", Precio: 20000 },
-  { id: 11, nombre: "Accesorio #11", imagen: "../Imagenes/Accesorios/accesorio10.jpg", descripcion: "Accesorios de Calidad.", Valor: "Valor: $13000", Precio: 13000 },
+// Array con todos los Softwares
+const programas =[
+  { id: 1, nombre: "Software #1", imagen: "../Imagenes/Softwares/Software1.jpg", descripcion: "Windows 11 Pro.", Valor: "Valor: $55.000", Precio: 55000 },
+  { id: 2, nombre: "Software #2", imagen: "../Imagenes/Softwares/Software2.jpg", descripcion: "Windows Server 2019.", Valor: "Valor: $20.000", Precio: 20000 },
+  { id: 3, nombre: "Software #3", imagen: "../Imagenes/Softwares/Software3.jpg", descripcion: "Windows Server 2024.", Valor: "Valor: $30.000", Precio: 30000 },
+  { id: 4, nombre: "Software #4", imagen: "../Imagenes/Softwares/Software4.jpg", descripcion: "Office 2024 Pro plus.", Valor: "Valor: $25.000", Precio: 25000 },
+  { id: 5, nombre: "Software #5", imagen: "../Imagenes/Softwares/Software5.jpg", descripcion: "Office 365 - Arriendo anual.", Valor: "Valor: $18.000", Precio: 18000 },
+  { id: 6, nombre: "Software #6", imagen: "../Imagenes/Softwares/Software6.jpg", descripcion: "Avast Internet Security.", Valor: "Valor: $25.000", Precio: 25000 },
+  { id: 7, nombre: "Software #7", imagen: "../Imagenes/Softwares/Software7.jpg", descripcion: "Ripslab - Software para IPS (Salud) - Alquiler Mensual.", Valor: "Valor: $3.000.000", Precio: 3000000 },
+  { id: 8, nombre: "Software #8", imagen: "../Imagenes/Softwares/Software8.jpg", descripcion: "Sysfac - Software para ESP (Servicios Públicos) - Alquiler Mensual.", Valor: "Valor: $1.500.000", Precio: 1500000 },
+  { id: 9, nombre: "Software #9", imagen: "../Imagenes/Softwares/Software9.jpg", descripcion: "Credisys - Software Comercial (Almacenes).", Valor: "Valor: $800.000", Precio: 800000 },
 ];
 
 
@@ -149,30 +147,30 @@ function mostrarEquipos() {
   });
 }
 
-// Función para mostrar los accesorios
-function mostrarAccesorios() {
-  const contenedor = document.getElementById('contenedor-accesorios');
+// Función para mostrar los Softwares
+function mostrarProgramas() {
+  const contenedor = document.getElementById('contenedor-programas');
   
   if (!contenedor) {
-    console.error('No se encontró el contenedor para accesorios.');
+    console.error('No se encontró el contenedor para Softwares.');
     return;
   }
 
-  accesorios.forEach(accesorio => {
+  programas.forEach(programa => {
     const card = document.createElement('div');
     card.className = 'col-md-4 mb-4';
     card.innerHTML = `
       <div class="card h-100">
-        <img src="${accesorio.imagen}" class="card-img-top" alt="${accesorio.nombre}" style="height:250px; object-fit:cover;">
+        <img src="${programa.imagen}" class="card-img-top" alt="${programa.nombre}" style="height:250px; object-fit:cover;">
         <div class="card-body">
-          <h5 class="card-title">${accesorio.nombre}</h5>
-          <p class="card-text">${accesorio.descripcion}</p>
-          <p class="card-text">${accesorio.Valor}</p>
+          <h5 class="card-title">${programa.nombre}</h5>
+          <p class="card-text">${programa.descripcion}</p>
+          <p class="card-text">${programa.Valor}</p>
           <button class="btn btn-success agregar-carrito"
-                  data-id="${accesorio.id}"
-                  data-nombre="${accesorio.nombre}"
-                  data-precio="${accesorio.Precio}"
-                  data-imagen="${accesorio.imagen}">
+                  data-id="${programa.id}"
+                  data-nombre="${programa.nombre}"
+                  data-precio="${programa.Precio}"
+                  data-imagen="${programa.imagen}">
             Agregar al carrito
           </button>
         </div>
@@ -187,5 +185,5 @@ document.addEventListener('DOMContentLoaded',
   mostrarcursos(), 
   mostrarConsultorias(), 
   mostrarEquipos(),
-  mostrarAccesorios()
+  mostrarProgramas()
 );
